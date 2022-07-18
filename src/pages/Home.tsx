@@ -1,36 +1,20 @@
-import styled from "styled-components";
-import Card from "../components/Card";
-
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-`;
+import Consultation from "../components/Consultation";
+import Hero from "../components/Hero";
+import LatestNews from "../components/LatestNews";
+import MoreInfo from "../components/MoreInfo";
+import TeamInfo from "../components/TeamInfo";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 const Home = () => {
   return (
-    <Container>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </Container>
+    <>
+      <Hero />
+      <WhyChooseUs />
+      <TeamInfo />
+      <LatestNews />
+      <MoreInfo />
+      <Consultation />
+    </>
   );
 };
 

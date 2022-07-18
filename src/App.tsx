@@ -1,9 +1,8 @@
-import { useState } from "react";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
 
 const App = () => {
-  const [demo, setDemo] = useState(true);
-  console.log("app rendered");
-  return <div>{demo ? `Hello Manikangkan` : `Welcome Guest`}</div>;
+  return <Layout>{<Home />}</Layout>;
 };
 
 export default App;
