@@ -28,14 +28,14 @@ const items = [
 
 const LatestNews = () => {
   return (
-    <section className="max-w-6xl mx-auto py-16">
+    <section className="max-w-6xl mx-auto py-8 lg:py-16 px-4 xl:px-0">
       <div className="flex items-center justify-between">
         <Heading>Latest news</Heading>
-        <Button varient="primary">View all</Button>
+        <Button>View all</Button>
       </div>
-      <div className="flex space-x-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {items.map((item) => (
-          <LatestNewsCard item={item} />
+          <LatestNewsCard key={item.title} item={item} />
         ))}
       </div>
     </section>

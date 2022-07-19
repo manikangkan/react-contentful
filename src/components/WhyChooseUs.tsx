@@ -37,7 +37,7 @@ const items = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="max-w-6xl mx-auto space-y-16 pt-16">
+    <section className="max-w-6xl mx-auto space-y-16 py-8 lg:py-16 px-4 xl:px-0">
       <div className="text-center">
         <Heading>Why choose us</Heading>
         <Paragraph>
@@ -45,9 +45,9 @@ const WhyChooseUs = () => {
           the globle for many years.
         </Paragraph>
       </div>
-      <ul className="grid grid-cols-3 gap-16">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
         {items.map((item) => {
-          return <WhyChooseUsCard item={item} />;
+          return <WhyChooseUsCard key={item.title} item={item} />;
         })}
       </ul>
     </section>

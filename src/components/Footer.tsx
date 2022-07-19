@@ -20,12 +20,12 @@ const items = [
 const Footer = () => {
   return (
     <footer>
-      <div className="max-w-6xl mx-auto flex justify-between py-16">
-        <p className="text-sm">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-5 gap-8 py-8 lg:py-16 px-4 xl:px-0">
+        <p className="text-sm col-span-1">
           <strong>Beyond LTD.</strong> <br /> by manikangkandas
         </p>
         {items.map((item) => (
-          <div key={item.category}>
+          <div key={item.category} className="col-span-1">
             <p className="text-sm font-bold">{item.category}</p>
             <ul className="py-4 space-y-2">
               {item.links.map((link) => (
