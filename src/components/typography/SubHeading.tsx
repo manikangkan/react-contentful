@@ -1,6 +1,7 @@
 const SubHeading = ({ color, children }) => {
   return (
-    <h2 className={`text-xl font-semibold leading-relaxed text-${color}`}>
+    <h2
+      className={`md:text-xl font-semibold my-2  md:my-4 leading-relaxed text-${color}`}>
       {children}
     </h2>
   );

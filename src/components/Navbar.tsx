@@ -17,7 +17,7 @@ const Nav = () => {
           className="w-10 h-10 rounded-full ring-1 ring-orange-500 p-0.5 cursor-pointer"
         />
       </a>
-      <div className="md:hidden cursor-pointer hover:bg-gray-100 text-xl p-2 rounded-full">
+      <div className="md:hidden cursor-pointer hover:bg-gray-100 p-2 rounded-full">
         🟰
       </div>
       <ul className="hidden md:flex items-center space-x-4">
