@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
+
 const items = [
   {
     category: "LINKS",
@@ -18,12 +21,11 @@ const items = [
 ];
 
 const Footer = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+
   return (
     <footer>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-5 gap-8 py-8 lg:py-16 px-4 xl:px-0">
-        <p className="text-sm col-span-1">
-          <strong>Beyond LTD.</strong> <br /> by manikangkandas
-        </p>
         {items.map((item) => (
           <div key={item.category} className="col-span-1">
             <p className="text-sm font-bold">{item.category}</p>
@@ -38,10 +40,27 @@ const Footer = () => {
             </ul>
           </div>
         ))}
+        <div className="space-y-2">
+          <p className="text-sm font-bold">THEME</p>
+          <div className="flex space-x-2">
+            <div
+              className={`bg-orange-500 w-6 h-6 rounded-sm cursor-pointer ${
+                theme === "light" && "rounded-full"
+              }`}
+              onClick={() => setTheme(theme === "dark" ? "light" : "light")}
+            />
+            <div
+              className={`bg-blue-500 w-6 h-6 rounded-sm cursor-pointer ${
+                theme === "dark" && "rounded-full"
+              }`}
+              onClick={() => setTheme(theme === "light" ? "dark" : "dark")}
+            />
+          </div>
+        </div>
       </div>
       <div className="">
         <p className="text-sm font-medium bg-gray-100 p-4 text-center">
-          © {new Date().getFullYear()} Beyond LTD.
+          © {new Date().getFullYear()} Beyond LTD. by manikangkandas
         </p>
       </div>
     </footer>

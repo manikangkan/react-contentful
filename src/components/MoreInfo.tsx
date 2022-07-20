@@ -9,7 +9,7 @@ const items = [
   {
     icon: "🎓",
     title: "Employers",
-    desc: "We exist because  businesses want to hire the best people.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim vulputate aliquam arcu.",
+    desc: "We exist because  businesses want to hire the best people. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim vulputate aliquam arcu.",
   },
 ];
 
