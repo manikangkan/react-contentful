@@ -5,9 +5,6 @@
 ## 🤔 Objective
 Build a React page based on this Figma Design. All the content (text and images) must be coming from any headless CMS of your choice. There are a few popular SaaS Headless CMS (for example - Contentful ) where you can do a free sign up for a trial period.
 
-## 🥇 Context
-Imagine you are working for an Edtech company and you are asked to create a simple application that will allow to create a hackathon and seek participation to get solutions. The hackathon consists of a problem statement which can be accessed by participants to solve and make a submission. Here let’s imagine those who create a hackathon as organizer and those who can take part in it as “participant(s)”. Now as a developer you are asked to create a dashboard for organizer to create a hackathon.
-
 ## 🐤 Application overview
 
 - Non Functional Requirements
