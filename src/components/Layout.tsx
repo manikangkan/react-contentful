@@ -1,7 +1,7 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Sidebar from "./Sidebar";
 import { useState } from "react";
+import Footer from "./shared/Footer";
+import Navbar from "./shared/Navbar";
+import Sidebar from "./shared/Sidebar";
 
 const Layout = ({ children }) => {
   const [showSidebar, setShowSidebar] = useState(false);

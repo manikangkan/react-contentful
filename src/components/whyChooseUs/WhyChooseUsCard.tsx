@@ -1,5 +1,5 @@
-import Paragraph from "./typography/Paragraph";
-import SubHeading from "./typography/SubHeading";
+import SubHeading from "../typography/SubHeading";
+import Paragraph from "../typography/Paragraph";
 
 const WhyChooseUsCard = ({ item }) => {
   return (
@@ -7,8 +7,8 @@ const WhyChooseUsCard = ({ item }) => {
       <div className="flex items-start space-x-2">
         <div className="mt-2 md:mt-4">✔️</div>
         <div>
-          <SubHeading>{item.title}</SubHeading>
-          <Paragraph>{item.description}</Paragraph>
+          <SubHeading>{item.subHeading}</SubHeading>
+          <Paragraph>{item.paragraph}</Paragraph>
         </div>
       </div>
     </li>

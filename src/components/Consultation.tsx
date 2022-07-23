@@ -1,15 +1,27 @@
-import Button from "./button/Button";
+import { useEffect, useState } from "react";
+import useContentful from "../hooks/useContentful";
+import Button from "./Button";
 import Heading from "./typography/Heading";
 import Paragraph from "./typography/Paragraph";
 
 const Consultation = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const [data, setData] = useState([]);
+
+  const { getConsultationSectionData } = useContentful();
+
+  useEffect(() => {
+    getConsultationSectionData().then((items) => {
+      setData(...items);
+      setIsLoading(false);
+    });
+  }, []);
+
   return (
     <section className="bg-orange-500 dark:bg-blue-500 flex flex-col items-center justify-center py-8 lg:py-16 px-4 xl:px-0 text-center">
-      <Heading color="white">Speak to a Career Expert</Heading>
-      <Paragraph color="white">
-        We have are dedicated to finding the best fit for you. Get in touch to
-        organise a face-to-face cactch up with somone from our team.
-      </Paragraph>
+      <Heading color="white">{data.heading}</Heading>
+      <Paragraph color="white">{data.paragraph}</Paragraph>
       <Button varient="secondary">Get in touch</Button>
     </section>
   );

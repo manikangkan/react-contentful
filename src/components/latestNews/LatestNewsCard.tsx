@@ -1,12 +1,12 @@
-import Button from "./button/Button";
-import Paragraph from "./typography/Paragraph";
-import SubHeading from "./typography/SubHeading";
+import Button from "../Button";
+import Paragraph from "../typography/Paragraph";
+import SubHeading from "../typography/SubHeading";
 
 const LatestNewsCard = ({ item }) => {
   return (
     <div className="space-y-4">
       <img src={item.image} alt="news" className="rounded-md cursor-pointer" />
-      <SubHeading>{item.title}</SubHeading>
+      <SubHeading>{item.subHeading}</SubHeading>
       <div>
         <Paragraph>by {item.author}</Paragraph>
         <Paragraph>{item.time}</Paragraph>

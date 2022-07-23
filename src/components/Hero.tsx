@@ -1,14 +1,41 @@
 import Title from "./typography/Title";
-import SubTitle from "./typography/SubTItle";
-import Button from "./button/Button";
+import Button from "./Button";
+import { useEffect, useState } from "react";
+import useContentful from "../hooks/useContentful";
 
 const Hero = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const [data, setData] = useState([]);
+
+  const { getHeroSectionData } = useContentful();
+
+  useEffect(() => {
+    getHeroSectionData().then((items) => {
+      setData(...items);
+      setIsLoading(false);
+    });
+  }, []);
+
   return (
-    <section className="bg-[url('https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] bg-center bg-no-repeat bg-cover py-64 px-4 xl:px-0">
+    <section className="py-64 px-4 xl:px-0 relative">
       <div className="max-w-6xl mx-auto">
-        <Title>Kickass software dev</Title>
+        {isLoading ? (
+          <div className="h-10 w-1/2 rounded-full bg-gray-400 animate-pulse" />
+        ) : (
+          <Title>{data.title}</Title>
+        )}
         <Button varient="primary">Play showreel</Button>
       </div>
+      {isLoading ? (
+        <div className="absolute -z-50 h-full w-full object-cover top-0 bottom-0 left-0 right-0 bg-gray-400 animate-pulse" />
+      ) : (
+        <img
+          src={data.image}
+          alt="hero image"
+          className="absolute -z-50 h-full w-full object-cover top-0 bottom-0 left-0 right-0"
+        />
+      )}
     </section>
   );
 };

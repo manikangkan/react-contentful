@@ -9,7 +9,7 @@ export const items = [
 
 const Navbar = ({ showSidebar, setShowSidebar }) => {
   return (
-    <nav className="px-4 xl:px-0 sticky top-0 bg-white/20 backdrop-blur-md">
+    <nav className="px-4 xl:px-0 sticky top-0 bg-white/80 backdrop-blur-md z-50">
       <div className="max-w-6xl mx-auto py-2 flex items-center justify-between">
         <a href="https://github.com/manikangkandas">
           <img

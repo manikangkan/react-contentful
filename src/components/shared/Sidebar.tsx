@@ -3,10 +3,10 @@ import { items } from "./Navbar";
 const Sidebar = ({ showSidebar }) => {
   return (
     <aside
-      className={`fixed w-full h-full bg-orange-500 dark:bg-blue-500 p-4 ease-in-out duration-300 ${
+      className={`fixed w-full h-full bg-orange-500 dark:bg-blue-500 p-4 ease-in-out duration-300 z-50 ${
         showSidebar ? "translate-x-0 " : "translate-x-full"
       }`}>
-      <ul>
+      <ul className="">
         {items.map((item) => (
           <li
             key={item}
