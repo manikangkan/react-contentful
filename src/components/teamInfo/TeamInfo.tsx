@@ -15,7 +15,7 @@ const TeamInfo = () => {
 
   useEffect(() => {
     getTeamInfoSectionData().then((items) => {
-      setData(...items);
+      setData(items);
       setIsLoading(false);
     });
   }, []);
@@ -27,14 +27,14 @@ const TeamInfo = () => {
       ) : (
         <div className="max-w-6xl mx-auto flex flex-col items-center lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
           <img
-            src={data.image}
+            src={data[0].image}
             alt="team info image"
             className="lg:w-1/2 rounded-lg"
           />
           <div>
-            <SubHeading>{data.subHeading}</SubHeading>
-            <Heading>{data.heading}</Heading>
-            <Paragraph>{data.paragraph}</Paragraph>
+            <SubHeading>{data[0].subHeading}</SubHeading>
+            <Heading>{data[0].heading}</Heading>
+            <Paragraph>{data[0].paragraph}</Paragraph>
             <Button>Learn more</Button>
           </div>
         </div>

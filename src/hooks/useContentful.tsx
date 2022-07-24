@@ -13,7 +13,7 @@ const useContentful = () => {
         select: "fields",
       });
 
-      const sanitizedEntries = entries.items.map((item) => {
+      const sanitizedEntries = entries.items.map((item: any) => {
         const image = item.fields.image.fields.file.url;
         return {
           ...item.fields,
@@ -34,7 +34,7 @@ const useContentful = () => {
         select: "fields",
       });
 
-      const sanitizedEntries = entries.items.map((item) => {
+      const sanitizedEntries = entries.items.map((item: any) => {
         return {
           ...item.fields,
         };
@@ -53,7 +53,7 @@ const useContentful = () => {
         select: "fields",
       });
 
-      const sanitizedEntries = entries.items.map((item) => {
+      const sanitizedEntries = entries.items.map((item: any) => {
         return {
           ...item.fields,
         };
@@ -72,7 +72,7 @@ const useContentful = () => {
         select: "fields",
       });
 
-      const sanitizedEntries = entries.items.map((item) => {
+      const sanitizedEntries = entries.items.map((item: any) => {
         const image = item.fields.image.fields.file.url;
         return {
           ...item.fields,
@@ -93,7 +93,7 @@ const useContentful = () => {
         select: "fields",
       });
 
-      const sanitizedEntries = entries.items.map((item) => {
+      const sanitizedEntries = entries.items.map((item: any) => {
         return {
           ...item.fields,
         };
@@ -112,7 +112,7 @@ const useContentful = () => {
         select: "fields",
       });
 
-      const sanitizedEntries = entries.items.map((item) => {
+      const sanitizedEntries = entries.items.map((item: any) => {
         const image = item.fields.image.fields.file.url;
         return {
           ...item.fields,
@@ -133,7 +133,7 @@ const useContentful = () => {
         select: "fields",
       });
 
-      const sanitizedEntries = entries.items.map((item) => {
+      const sanitizedEntries = entries.items.map((item: any) => {
         return {
           ...item.fields,
         };
@@ -152,7 +152,7 @@ const useContentful = () => {
         select: "fields",
       });
 
-      const sanitizedEntries = entries.items.map((item) => {
+      const sanitizedEntries = entries.items.map((item: any) => {
         return {
           ...item.fields,
         };
