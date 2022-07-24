@@ -1,6 +1,13 @@
 # Project techwondoe site
 
 ## 📜 Screenshots
+![image](https://user-images.githubusercontent.com/75943412/180653560-d5d27f88-48fc-44c5-8602-c9a326d6f534.png)
+![image](https://user-images.githubusercontent.com/75943412/180653596-b6e7e0b8-1e4a-406c-85cc-0834229f6720.png)
+![image](https://user-images.githubusercontent.com/75943412/180653645-3568ba31-e9c5-4b64-bd39-8448f474acdb.png)
+![image](https://user-images.githubusercontent.com/75943412/180653619-e8aae263-295a-453a-aeed-33b610bea290.png)
+![image](https://user-images.githubusercontent.com/75943412/180653710-51d473ad-2e05-4c61-94eb-58ff38c796e5.png)
+![image](https://user-images.githubusercontent.com/75943412/180653732-d2526d55-20ba-44f9-8aa8-e2e1c1645aee.png)
+
 
 ## 🤔 Objective
 Build a React page based on this Figma Design. All the content (text and images) must be coming from any headless CMS of your choice. There are a few popular SaaS Headless CMS (for example - Contentful ) where you can do a free sign up for a trial period.
