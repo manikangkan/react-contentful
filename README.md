@@ -149,4 +149,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Author Info - [@manikankandas](https://linkedin.com/in/techwondoe) - manikangkan.das@outlook.com
 <br />
-Project Link - [Techwondoe](https://github.com/manikangkandas/techwondoe)
+Project github repo Link - [Techwondoe](https://github.com/manikangkandas/techwondoe)
+Live link - [Techwondoe](https://manikangkandas.github.io/techwondoe/)
