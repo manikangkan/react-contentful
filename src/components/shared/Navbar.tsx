@@ -7,7 +7,12 @@ export const items = [
   "Contact",
 ];
 
-const Navbar = ({ showSidebar, setShowSidebar }) => {
+type NavbarProps = {
+  showSidebar: boolean;
+  setShowSidebar: (showSidebar: boolean) => void;
+};
+
+const Navbar = ({ showSidebar, setShowSidebar }: NavbarProps) => {
   return (
     <nav className="px-4 xl:px-0 sticky top-0 bg-white/80 backdrop-blur-md z-50">
       <div className="max-w-6xl mx-auto py-2 flex items-center justify-between">
@@ -15,7 +20,7 @@ const Navbar = ({ showSidebar, setShowSidebar }) => {
           <img
             src="https://avatars.githubusercontent.com/u/75943412?v=4"
             alt="manikangkandas"
-            className="w-10 h-10 rounded-md hover:rounded-full hover:ring-1 ring-orange-500 dark:ring-blue-500 p-0.5 cursor-pointer"
+            className="w-10 h-10 rounded-md hover:rounded-full ring-1 ring-orange-500 dark:ring-blue-500 p-0.5 cursor-pointer"
           />
         </a>
         <div

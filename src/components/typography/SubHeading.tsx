@@ -1,4 +1,8 @@
-const SubHeading = ({ children }) => {
+type SubHeadingProps = {
+  children: React.ReactNode;
+};
+
+const SubHeading = ({ children }: SubHeadingProps) => {
   return (
     <h2 className="md:text-xl font-semibold my-2  md:my-4 leading-relaxed">
       {children}

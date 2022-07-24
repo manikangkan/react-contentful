@@ -7,9 +7,9 @@ import SubHeading from "../typography/SubHeading";
 import TeamInfoSkeletonLoader from "./TeamInfoSkeletonLoader";
 
 const TeamInfo = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<any | null>(null);
 
   const { getTeamInfoSectionData } = useContentful();
 

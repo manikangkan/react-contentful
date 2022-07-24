@@ -7,8 +7,8 @@ Build a React page based on this Figma Design. All the content (text and images)
 
 ## 🐤 Application overview
 
-- Non Functional Requirements
-- Each section of the homepage must be a separate react component.
+- [x] Non Functional Requirements
+- [ ]  Each section of the homepage must be a separate react component.
 - Develop using Typescript.
 - Use tailwindcss(preferrable) or Material UI
 - No hardcoding of text in react app. All the content (text and images) must be coming from a Headless CMS through its API (Example API reference ).

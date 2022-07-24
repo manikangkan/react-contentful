@@ -7,18 +7,18 @@ import WhyChooseUsCard from "./WhyChooseUsCard";
 import WhyChooseUsCardSkeletonLoader from "./WhyChooseUsCardSkeletonLoader";
 
 const WhyChooseUs = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [isCardLoading, setIsCardLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isCardLoading, setIsCardLoading] = useState<boolean>(true);
 
-  const [data, setData] = useState([]);
-  const [cardData, setCardData] = useState([]);
+  const [data, setData] = useState<any | null>(null);
+  const [cardData, setCardData] = useState<any | null>(null);
 
   const { getWhyChooseUsSectionData } = useContentful();
   const { getWhyChooseUsSectionCardData } = useContentful();
 
   useEffect(() => {
     getWhyChooseUsSectionData().then((items) => {
-      setData(...items);
+      setData(items);
       setIsLoading(false);
     });
   }, []);
@@ -37,8 +37,8 @@ const WhyChooseUs = () => {
           <SectionHeaderPragraphSkeletonLoader />
         ) : (
           <>
-            <Heading>{data.heading}</Heading>
-            <Paragraph>{data.paragraph}</Paragraph>
+            <Heading>{data[0].heading}</Heading>
+            <Paragraph>{data[0].paragraph}</Paragraph>
           </>
         )}
       </div>
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           ? [...Array(3)].map((_, index) => (
               <WhyChooseUsCardSkeletonLoader key={index} />
             ))
-          : cardData.map((item, index) => (
+          : cardData.map((item: any, index: number) => (
               <WhyChooseUsCard key={index} item={item} />
             ))}
       </ul>

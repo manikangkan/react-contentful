@@ -21,8 +21,8 @@ const items = [
 ];
 
 const Footer = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
-
+  const { theme, setTheme } = useContext<any>(ThemeContext);
+  console.log(theme);
   return (
     <footer>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-5 gap-8 py-8 lg:py-16 px-4 xl:px-0">
@@ -44,14 +44,14 @@ const Footer = () => {
           <p className="text-sm font-bold">THEME</p>
           <div className="flex space-x-2">
             <div
-              className={`bg-orange-500 w-6 h-6 rounded-sm cursor-pointer ${
-                theme === "light" && "rounded-full"
+              className={`bg-orange-500 w-6 h-6 cursor-pointer ${
+                theme === "light" ? "rounded-full" : "rounded-sm"
               }`}
               onClick={() => setTheme(theme === "dark" ? "light" : "light")}
             />
             <div
-              className={`bg-blue-500 w-6 h-6 rounded-sm cursor-pointer ${
-                theme === "dark" && "rounded-full"
+              className={`bg-blue-500 w-6 h-6 cursor-pointer ${
+                theme === "dark" ? "rounded-full" : "rounded-sm"
               }`}
               onClick={() => setTheme(theme === "light" ? "dark" : "dark")}
             />

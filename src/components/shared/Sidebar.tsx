@@ -1,6 +1,10 @@
 import { items } from "./Navbar";
 
-const Sidebar = ({ showSidebar }) => {
+type NavbarProps = {
+  showSidebar: boolean;
+};
+
+const Sidebar = ({ showSidebar }: NavbarProps) => {
   return (
     <aside
       className={`fixed w-full h-full bg-orange-500 dark:bg-blue-500 p-4 ease-in-out duration-300 z-50 ${

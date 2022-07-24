@@ -3,7 +3,11 @@ import Footer from "./shared/Footer";
 import Navbar from "./shared/Navbar";
 import Sidebar from "./shared/Sidebar";
 
-const Layout = ({ children }) => {
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+const Layout = ({ children }: LayoutProps) => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
