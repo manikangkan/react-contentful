@@ -30,6 +30,56 @@ Build a React page based on this Figma Design. All the content (text and images)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Contentful](https://app.contentful.com/)
 
+## 🎏 Project Structure
+```
+├── node_modules (.gitignore)
+├── public
+│   └── favicon.jpg
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   ├── Button.tsx
+│   │   ├── Consultation.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Layout.tsx
+│   │   ├── ThemeContext.tsx
+│   │   ├── latestNews
+│   │   │   ├── LatestNews.tsx
+│   │   │   └── LatestNewsCard.tsx
+│   │   ├── moreInfo
+│   │   │   ├── MoreInfo.tsx
+│   │   │   └── MoreInfoCard.tsx
+│   │   ├── shared
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── SectionHeaderPragraphSkeletonLoader.tsx
+│   │   │   └── Sidebar.tsx
+│   │   ├── teamInfo
+│   │   │   ├── TeamInfo.tsx
+│   │   │   └── TeamInfoSkeletonLoader.tsx
+│   │   ├── typography
+│   │   │   ├── Heading.tsx
+│   │   │   ├── Paragraph.tsx
+│   │   │   ├── SubHeading.tsx
+│   │   │   └── Title.tsx
+│   │   └── whyChooseUs
+│   │       ├── WhyChooseUs.tsx
+│   │       ├── WhyChooseUsCard.tsx
+│   │       └── WhyChooseUsCardSkeletonLoader.tsx
+│   ├── hooks
+│   │   └── useContentful.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── pages
+│   │   └── Home.tsx
+│   └── vite-env.d.ts
+├── tailwind.config.cjs
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── yarn-error.log
+└── yarn.lock
+```
 ## 🧑🏻‍🎤 Installation
 
 1. Clone the repo
