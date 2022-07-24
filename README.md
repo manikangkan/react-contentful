@@ -1,12 +1,17 @@
 # Project techwondoe site
 
 ## 📜 Screenshots
-![image](https://user-images.githubusercontent.com/75943412/180653560-d5d27f88-48fc-44c5-8602-c9a326d6f534.png)
-![image](https://user-images.githubusercontent.com/75943412/180653596-b6e7e0b8-1e4a-406c-85cc-0834229f6720.png)
-![image](https://user-images.githubusercontent.com/75943412/180653645-3568ba31-e9c5-4b64-bd39-8448f474acdb.png)
-![image](https://user-images.githubusercontent.com/75943412/180653619-e8aae263-295a-453a-aeed-33b610bea290.png)
-![image](https://user-images.githubusercontent.com/75943412/180653710-51d473ad-2e05-4c61-94eb-58ff38c796e5.png)
-![image](https://user-images.githubusercontent.com/75943412/180653732-d2526d55-20ba-44f9-8aa8-e2e1c1645aee.png)
+Desktop primary | Desktop secondary
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/75943412/180653560-d5d27f88-48fc-44c5-8602-c9a326d6f534.png) | ![](https://user-images.githubusercontent.com/75943412/180653981-92348130-7651-4a3c-a249-7c13de5a2abc.png)
+
+Mobile primary | Mobile secondary 
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/75943412/180653645-3568ba31-e9c5-4b64-bd39-8448f474acdb.png) | ![](https://user-images.githubusercontent.com/75943412/180654133-5d149d0a-68f9-47aa-92df-59b7df24a58c.png)
+
+Mobile primary | Mobile secondary 
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/75943412/180653710-51d473ad-2e05-4c61-94eb-58ff38c796e5.png) | ![](https://user-images.githubusercontent.com/75943412/180653732-d2526d55-20ba-44f9-8aa8-e2e1c1645aee.png)
 
 
 ## 🤔 Objective
@@ -47,15 +52,19 @@ Build a React page based on this Figma Design. All the content (text and images)
 │   ├── components
 │   │   ├── Button.tsx
 │   │   ├── Consultation.tsx
-│   │   ├── Hero.tsx
 │   │   ├── Layout.tsx
 │   │   ├── ThemeContext.tsx
+│   │   ├── hero
+│   │   │   ├── Hero.tsx
+│   │   │   └── HeroSkeletonLoader.tsx
 │   │   ├── latestNews
 │   │   │   ├── LatestNews.tsx
-│   │   │   └── LatestNewsCard.tsx
+│   │   │   ├── LatestNewsCard.tsx
+│   │   │   └── LatestNewsCardSkeletonLoader.tsx
 │   │   ├── moreInfo
 │   │   │   ├── MoreInfo.tsx
-│   │   │   └── MoreInfoCard.tsx
+│   │   │   ├── MoreInfoCard.tsx
+│   │   │   └── MoreInfoCardSkeletonLoader.tsx
 │   │   ├── shared
 │   │   │   ├── Footer.tsx
 │   │   │   ├── Navbar.tsx
