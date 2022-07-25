@@ -30,7 +30,7 @@ Build a React page based on this Figma Design. All the content (text and images)
 - [x] Button - Primary and secondary
 - [x] Typography - H1, H2, Paragraph
 - [x] Sub component of the Why Choose us section with icon, title and paragraph.
-- [x] Prettier and Linter configuration
+- [ ] Prettier and Linter configuration
 - [x] Host the page on Netlify, Vercel or another provider.
 - [x] Readme file on how to deploy and run the service.
 - [x] Add a checklist of the above items on ReadMe and check all the items before submitting the assignment.
