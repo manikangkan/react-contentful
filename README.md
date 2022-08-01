@@ -1,4 +1,4 @@
-# Project techwondoe site
+# React-contentful site
 
 ## 📜 Screenshots
 Desktop primary | Desktop secondary
